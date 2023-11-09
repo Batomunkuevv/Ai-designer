@@ -1,0 +1,38 @@
+.btn {
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: $colorMain;
+    color: #fff;
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 600;
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out 0s;
+
+    @media (max-width: 1536px) {
+        padding: 16px 24px;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 16px 0px $colorMain;
+    }
+
+    &--black {
+        background: $colorSecond;
+
+        &:hover {
+            box-shadow: 0px 0px 12px 0px rgba(33, 33, 33, 0.4);
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

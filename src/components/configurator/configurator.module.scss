@@ -1,0 +1,15 @@
+.configurator {
+    flex: 1 1 auto;
+    display: grid;
+    position: relative;
+
+    &__btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        position: absolute;
+        z-index: 1;
+        bottom: 44px;
+        left: 16px;
+        font-size: 16px;
+    }
+}

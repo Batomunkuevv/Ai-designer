@@ -1,0 +1,123 @@
+@import "../../assets//scss//base//variables";
+
+.ai-designer {
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    inset: 0;
+    display: flex;
+    overflow: auto;
+    scrollbar-width: 4px;
+    scrollbar-color: $colorMain #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: 0 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $colorMain;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+
+    &__panel {
+        padding: 32px 62px;
+        width: 34.94%;
+        background: rgba(34, 34, 34, 0.6);
+        display: flex;
+        flex-direction: column;
+        gap: calc($index * 3);
+        position: relative;
+
+        @media (max-width: 1720px) {
+            padding: 48px 24px;
+            width: 30%;
+            gap: calc($index * 2);
+        }
+    }
+
+    &__styles {
+        margin-top: auto;
+        
+        &-caption {
+            margin-bottom: 21px;
+            display: block;
+            font-size: 18px;
+
+            @media(max-width: 1720px){
+                margin-bottom: 16px;
+            }
+        }
+
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 26px;
+
+            @media(max-width: 1720px){
+                gap: 16px;
+            }
+        }
+    }
+
+    &__btns {
+        margin-bottom: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        @media(max-width: 1720px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__btn {
+        width: 200px;
+        transition: all 0.5s ease-in-out 0s;
+
+        @media(max-width: 1720px){
+            width: 100%;
+        }
+    }
+
+    &__body {
+        padding: 0 16px;
+        margin-left: auto;
+        width: 65%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @media(max-width: 1720px){
+            width: 70%;
+        }
+    }
+
+    &__image {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}

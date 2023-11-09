@@ -1,0 +1,37 @@
+@import "../../assets/scss/base/variables";
+
+.loader {
+    margin: 0 auto;
+    border-radius: 30px;
+    background: $colorSecond;
+    max-width: 946px;
+    width: 100%;
+    height: 531px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__caption {
+        margin-bottom: 30px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    &__line {
+        width: 100%;
+        max-width: 564px;
+        height: 10px;
+        background: #fff;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    &__progress {
+        background: $colorMain;
+        height: 100%;
+        border-radius: 30px;
+        display: block;
+        transition: all 0.3s ease-in-out 0s;
+    }
+}

@@ -1,0 +1,70 @@
+html,
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    line-height: $lineHeight;
+    color: $colorFont;
+    font-weight: 500;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: 0 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $colorMain;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+
+    scrollbar-width: 4px;
+    scrollbar-color: $colorMain #fff;
+}
+
+body {
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
+// Iframe
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+// Img
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+// Svg
+
+svg {
+    max-width: 100%;
+}
+
+// Visually hidden
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
