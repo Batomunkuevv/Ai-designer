@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.7ef5c3cb.css",
-    "main.js": "./static/js/main.b57c35cd.js",
+    "main.js": "./static/js/main.4783c099.js",
     "static/media/Inter-SemiBold.woff": "./static/media/Inter-SemiBold.7f6c3678e245486167d9.woff",
     "static/media/Inter-SemiBold.woff2": "./static/media/Inter-SemiBold.90f5c90fdecd8895f496.woff2",
     "static/media/loft.jpg": "./static/media/loft.ccb5f15c5c6fa2597a8a.jpg",
@@ -14,10 +14,10 @@
     "static/media/minimalism.jpg": "./static/media/minimalism.5a975c16c9112b9ca289.jpg",
     "index.html": "./index.html",
     "main.7ef5c3cb.css.map": "./static/css/main.7ef5c3cb.css.map",
-    "main.b57c35cd.js.map": "./static/js/main.b57c35cd.js.map"
+    "main.4783c099.js.map": "./static/js/main.4783c099.js.map"
   },
   "entrypoints": [
     "static/css/main.7ef5c3cb.css",
-    "static/js/main.b57c35cd.js"
+    "static/js/main.4783c099.js"
   ]
 }
