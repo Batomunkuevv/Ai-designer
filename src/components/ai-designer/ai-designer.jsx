@@ -41,7 +41,7 @@ export const AiDesigner = ({ isOpenAiDesigner, setIsOpenAiDesigner }) => {
         body.append('mask', maskBlob, 'mask');
         body.append('meta', JSON.stringify(meta));
 
-        await fetch('/v1/ai_designer', {
+        await fetch('http://ai.moebelita.com/v1/ai_designer', {
             method: "POST",
             headers: {
                 "Authorization": 'Bearer sk-5C9gj05A6DKFZEL60iFG4IBsokKQ8gcQHHZBNuTluCS2gerBymreo6Qm7a3Bs'
